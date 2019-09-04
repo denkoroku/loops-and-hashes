@@ -11,12 +11,12 @@ end
 def is_item_in_array (array, item)
     array.each do |n|
       if n == item
-      else
-        return false
+        return true
       end
-  end
+    end
+    return false
 end
 
-def get_first_key (hash)
-  return hash.first
+def get_first_key(hash)
+  return hash.keys.first
 end
